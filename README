@@ -1,0 +1,22 @@
+
+hi all:
+this is a sample tool for static timing report with gate level verilog.
+it only support 2 inputs 1 output in each logic gate, such as AND,OR,NAND....
+you can check the logic true table and gate delay definition in tCAD::tTable.
+
+in tTable we define our logic true table with 'P:N' type. P means the pre-time arrival, 
+N means the next-time arrival @ each gate input reciver.
+
+ex:
+         _______
+P : r __|    ___
+N : r ______|
+@AND =================
+             ___
+T : r ______|     
+
+ref: https://sites.google.com/site/funningboy/verilog/A3_STA_0104.pdf?attredirects=0&d=1
+
+how to use it?
+make ex1 -> run example 1
+make ex2 -> run example 2 
